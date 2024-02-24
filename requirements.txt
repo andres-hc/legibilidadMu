@@ -7,4 +7,3 @@ factor-analyzer
 scipy
 regex
 unidecode
-os
