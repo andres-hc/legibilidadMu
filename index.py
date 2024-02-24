@@ -64,10 +64,7 @@ def crear_app():
         elif resto == 2:
             parte2.append(palabras[-2])
             parte3.append(palabras[-1])
-            # Ajustar todas las partes si hay un resto de 2
-            parte1 = palabras[:longitud_parte]
-            parte2 = palabras[longitud_parte:2*longitud_parte]
-            parte3 = palabras[2*longitud_parte:3*longitud_parte]
+            
 
         def contar_caracteres(palabras):
             conteo_caracteres = {i: 0 for i in range(1, 13)}
