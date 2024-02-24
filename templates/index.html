@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+            span {
+                color: #666;
+            }
+        }
+
+        .progress {
+            height: 5px;
+        }
+
+        .progress-bar {
+            background: -webkit-linear-gradient(left, #33156d 0%, #f282bc 100%);
+            /* Chrome10-25,Safari5.1-6 */
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <title>Legibilidad Mu</title>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-light" href="#bienvenidos">Bienvenidos</a>
+                <a class="nav-item nav-link text-light" href="#legi_mu">Legibilidad Mu</a>
+                <a class="nav-item nav-link text-light" href="#util">Utilidad</a>
+                <a class="nav-item nav-link text-light" href="#bib">Biblioteca</a>
+                <a class="nav-item nav-link text-light" href="#contac">Contacto</a>
+                <a class="nav-item nav-link text-light" href="http://www.legibilidadmu.cl/miguel/">Intranet</a>
+                <a class="nav-item nav-link text-light" href="#cita">¿Cómo citar la página web?</a>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="bienvenidos">
+                <h1>Bienvenidos</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light text-body">
+                <h6> Legibilidad Mu </h6>
+                <p> Bienvenidos a la herramienta informática Legibilidad Mu. Este instrumento permite analizar y obtener
+                    índices de legibilidad o facilidad de los textos, resultando una herramienta práctica para elaborar
+                    mensajes con diferentes legibilidades, dependiendo de las audiencias, receptores y/o usuarios de los
+                    textos. </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light text-body">
+                <h6> Uso Libre </h6>
+                <p> El uso del analizador Legibilidad Mu, documentos y el contenido de este sitio son gratuitos. Pueden
+                    ser reproducidos, archivados y transmitidos sin la autorización expresa del los autores. No
+                    obstante, quien use esta información debe registrar la fuente por medio de una cita, referencia, o
+                    en la bibliografía del artículo.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light text-body">
+                <h6> Objetivo </h6>
+                <p> El propósito del los autores es facilitar esta herramienta a investigadores, académicos,
+                    estudiantes, profesionales y público en general que elabora y evalúa textos o escritos.
+                </p>
+                <p><i>Miguel Misael Muñoz Baquedano</i> <br><i>José Miguel Muñoz Urra</i></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="legi_mu">
+                <h1>Legibilidad Mu</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <form action="/procesar_texto" method="POST">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8 bg-light text-body">
+                    <h6> Analizador </h6>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        <textarea cols="30" rows="15" id="numb"
+                                            placeholder="Ingrese el texto..."></textarea>
+                                    </td>
+                                    <td>
+                                        <select id="lista" name="list_box_name" size="10" style="height: 300px;">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button type="button" onclick="myFunction()">Calcular</button>
+                                    </td>
+
+                                    <td>
+
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">
+
+
+                <div class="labels">
+                    <span>Nivel de dificultad del texto (Legibilidad Mu): </span>
+                    <span id="dif">0</span>
+                </div>
+                <div class="progress" id="pg_bar">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 0%;">
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class=" col-md-4 bg-light text-body">
+                <ul class="list-group">
+                    <li class="list-group-item" id="d_1">Muy fácil</li>
+                    <li class="list-group-item" id="d_2">Fácil</li>
+                    <li class="list-group-item" id="d_3">Un poco fácil</li>
+                    <li class="list-group-item" id="d_4">Adecuado</li>
+                    <li class="list-group-item" id="d_5">Un poco difícil</li>
+                    <li class="list-group-item" id="d_6">Difícil</li>
+                    <li class="list-group-item" id="d_7">Muy difícil</li>
+                </ul>
+
+
+            </div>
+
+            <div class=" col-md-4 bg-light text-body">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Estadístico</th>
+                            <th scope="col">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Palabras</th>
+                            <td id="pal"></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Caracteres</th>
+                            <td id="car"></td>
+                        </tr>
+
+
+                        <tr>
+                            <th scope="row">Promedio</th>
+                            <td id="prom"></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Desviación Estándar</th>
+                            <td id="desv"></td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Varianza</th>
+                            <td id="var"></td>
+
+                        </tr>
+
+
+                        <tr>
+                            <th scope="row">Legibilidad Mu</th>
+                            <td id="legmu"></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light"> &nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!--Modificaciones-->
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="util">
+                <h1>Confiabilidad Omega de McDonald (ω)</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light text-body text-center">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 mt-3">
+                <!--Tabla de frecuencias-->
+                <table class="w-100 mx-auto mt-3 ">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="bg-info text-light" colspan="4">Tabla de frecuencias</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="bg-info text-light" colspan="4">Mediciones del Texto</th>
+                        </tr>
+                        <tr>
+                            <th class="bg-info text-light">Caracteres</th>
+                            <th class="bg-info text-light">Inicial</th>
+                            <th class="bg-info text-light">Central</th>
+                            <th class="bg-info text-light">Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">1</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_1"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_1"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">2</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_2"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_2"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_2"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">3</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_3"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_3"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_3"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">4</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_4"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_4"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_4"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">5</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_5"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_5"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_5"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">6</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_6"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_6"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_6"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">7</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_7"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_7"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_7"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">8</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_8"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_8"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_8"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">9</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_9"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_9"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_9"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">10</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_10"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_10"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_10"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">11</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_11"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_11"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_11"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">12 o más</td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaInicialCP_12"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaCentralCP_12"></td>
+                            <td class="p-1 table-bordered table-condensed" id="frecuenciaFinalCP_12"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="col-lg-8 mt-3">
+                <!--Tabla de cargas factoriales-->
+                <table class="w-100 mx-auto mt-3">
+                    <thead>
+                        <tr>
+                            <th class="bg-info text-light"></th>
+                            <th class="bg-info text-light" colspan="3">Cargas factoriales</th>
+                        </tr>
+                        <tr>
+                            <th class="bg-info text-light">Métodos de extracción</th>
+                            <th class="bg-info text-light">Inicial</th>
+                            <th class="bg-info text-light">Central</th>
+                            <th class="bg-info text-light">Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">Componentes Principales</td>
+                            <td class="p-1 table-bordered table-condensed" id="CP_1"></td>
+                            <td class="p-1 table-bordered table-condensed" id="CP_2"></td>
+                            <td class="p-1 table-bordered table-condensed" id="CP_3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Tabla de resultados-->
+                <table class="w-100 table table-bordered table-condensed mx-auto mt-3">
+                    <thead>
+                        <tr>
+                            <th class="bg-info text-light">Omega de McDonald según método de extracción factorial</th>
+                            <th class="bg-info text-light">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-1 font-weight-bold">Componentes Principales</td>
+                            <td class="p-1" id="componentes_principales"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Tabla Consistencia interna-->
+                <table class="w-50 mx-auto mt-3">
+                    <thead>
+                        <tr>
+                            <th class="bg-info text-light" colspan="4">Consistencia interna α y ω</th>
+                        </tr>
+                        <tr>
+                            <th class="bg-info text-light">ω de McDonald</th>
+                            <th class="bg-info text-light">Interpretación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">≥ 0.9</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Excelente</td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">≥ 0.8</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Buena</td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">≥ 0.7</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Aceptable</td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">≥ 0.6</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Cuestionable</td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">≥ 0.5</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Pobre</td>
+                        </tr>
+                        <tr>
+                            <td class="p-1 table-bordered table-condensed font-weight-bold">< 0.5</td>
+                            <td class="p-1 table-bordered table-condensed interpretacion">Inaceptable</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><small><strong>Fuente:</strong> George, D. y Mallery, P. (2003). SPSS for Windows step by step: A simple guide and reference. 11.0 update (4ª Ed.). Boston: Allyn & Bacon.</small></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+                </div>
+                </div>
+                
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <!--Fin Modificaciones-->
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="util">
+                <h1>Utilidad</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light text-body">
+
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <p class="mb-1">Contar y evaluar palabras y textos para tasar valores (prensa, traducción,
+                            otras)</p>
+
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Evaluar facilidad de los textos escolares según nivel educativo.</p>
+
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Diseñar, elaborar, graduar la facilidad de los textos.</p>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Evaluar producciones escritas según nivel educativo o grupos (género, edad,
+                            otros).</p>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Diseñar y elaborar textos para páginas WEB.</p>
+
+                    </a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Muestrear Corpus Lingüísticos.</p>
+
+                    </a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Obtener estadísticos para evaluar la igualdad o diferencias de facilidad de los
+                            textos.</p>
+
+                    </a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Evaluar textos en pruebas de formas paralelas.</p>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Estimar la “riqueza de vocabulario” de un texto o escrito.</p>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Comparar niveles de legibilidad en y con otros idiomas.</p>
+
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Evaluar documentos o contratos de consentimiento informado.</p>
+
+                    </a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Explorar evidencias de constructo y de contenido en test o investigaciones que
+                            empleen textos.</p>
+
+                    </a>
+
+
+                    <a href="#" class="list-group-item list-group-item-action">
+
+                        <p class="mb-1">Otras.</p>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="bib">
+                <h1>Biblioteca</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+
+
+            <div class="col-md-8 bg-light text-body">
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/1.pdf">Muñoz, M. (2006)</a></h5>
+                            <p class="card-text">Legibilidad y variabilidad de los textos. Boletín de Investigación
+                                Educacional, Pontificia Universidad Católica de Chile, 21, 2, 13-26.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Muñoz, M. (2007)</h5>
+                            <p class="card-text">Legibilidad y variabilidad de los textos. Ponencia presentada en el XII
+                                Congreso de la Sociedad Chilena de Lingüística, SOCHIL, 29-31 octubre, 2007, Universidad
+                                de Concepción, Chile.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Muñoz, M. (2007)</h5>
+                            <p class="card-text">Legibilidad y variabilidad de los textos. Ponencia presentada en el XIX
+                                Encuentro Nacional y V Internacional de Investigadores en Educación, CPEIP, 14-16,
+                                noviembre, 2007, Santiago, Chile.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+
+
+            <div class="col-md-8 bg-light text-body">
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/2.pdf">Muñoz, M. y Pizarro, R
+                                    (2007)</a></h5>
+                            <p class="card-text">Estudio de validez del test de Velocidad Compresiva PVCAL. Boletín de
+                                Investigación Educacional, Pontificia Universidad Católica de Chile, 22, 2, 255-276.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/3-ufro.pdf">Muñoz, M. y Pizarro,
+                                    R (2007)</a></h5>
+                            <p class="card-text">Hacia estándares nacionales de velocidad comprensiva, cuartos años
+                                básicos, República de Chile. Revista Investigaciones en Educación, Universidad de la
+                                Frontera, Temuco, Chile, 7,2,59-75.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/1-.pdf">Muñoz, M., Pizarro, R.,
+                                    y Colarte, P (2006)</a></h5>
+                            <p class="card-text">Dimensiones Latentes en el reconocimiento de letras en los párvulos de
+                                Pre-Kínder y Kínder de la comuna de Viña del Mar, Valparaíso, Chile, 2005. Ponencia
+                                presentada en el III Encuentro Interregional de Investigadores en Educación CPEIP,
+                                15-17, noviembre, 2006, La Serena, Chile.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+
+
+            <div class="col-md-8 bg-light text-body">
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/2-.pdf">Muñoz, M., Pizarro, R.,
+                                    Colarte, P., Saavedra, C. y Olmos, J. (2008)</a></h5>
+                            <p class="card-text">Legibilidad de las producciones escritas: Relación entre el vocabulario
+                                y comprensión en 4° básico. Boletín de Investigación Educacional, Pontificia Universidad
+                                Católica de Chile, 23,2,39-56.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/3-.pdf">Pizarro, R. (2008)</a>
+                            </h5>
+                            <p class="card-text">Sistemas educativos formales y Efecto Mateo, Regresivo y Robin Hood.
+                                Boletín de Investigación Educacional, Pontificia Universidad Católica de Chile,
+                                23,2,13,38. Ponencia en Octava Jornada de Investigadores en Educación, Departamento de
+                                Educación, Universidad de Los Lagos, 15-16 Enero, 2009, Osorno, Chile.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/1-1.pdf">Muñoz, M., Larrondo, T.
+                                    y Lara, M. (2010)</a></h5>
+                            <p class="card-text">Proyecto de Lectura desde Kinder, Mejor. Chile 2009. (Informe Técnico).
+                                Valparaíso: Centro de Innovación, Investigación y Evaluación en Contextos Educativos
+                                (CIIE) de la Universidad de Playa Ancha de Ciencias de la Educación.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+
+
+            <div class="col-md-8 bg-light text-body">
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/2-2.pdf">Muñoz, M., Larrondo, T
+                                    y Lara M. (2010)</a></h5>
+                            <p class="card-text">Estudio de validez del Test Exploratorio de la Creatividad e Innovación
+                                (TECRI). (Informe Técnico). Valparaíso: Centro de Innovación, Investigación y Evaluación
+                                en Contextos Educativos (CIIE) de la Universidad de Playa Ancha de Ciencias de la
+                                Educación.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title"><a href="http://www.legibilidadmu.cl/Confiabilidad.pdf">Muñoz, M. y Muñoz, J. (2023)</a></h5>
+                            <p class="card-text">Muñoz, M. y Muñoz, J. (10-12 de noviembre 2021). Implementación del Filtro de Kalman Unidimensional
+                                para la estimación de la confiabilidad y validez de las mediciones de legibilidad de los textos en un sistema dinámico 
+                                representado en la forma de espacio de estados [Resumen de presentación del congreso]. XXV Encuentro Nacional de Investigación en Educación, ENIN 2021, Centro de Perfeccionamiento, Experimentación e Investigaciones Pedagógicas (CPEIP) y Universidad de Los Lagos (ULagos), Osorno, Chile.
+                                <a href="https://congresoenin.ulagos.cl/">https://congresoenin.ulagos.cl/</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title"><a href="http://www.legibilidadmu.cl/BenjaminSBloom.pdf">Raúl Pizarro Sánchez (Ed., 2023).</a></h5>
+                        <p class="card-text">Benjamin S. Bloom: Aprendizajes de elevadas calidades y equidades EV.
+                            Síntesis y Excelencias Educativas. Viña del Mar, Chile.</p>
+                            <p>E-Mail: rjepizarrosan@gmail.com</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="contac">
+                <h1>Contacto</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">
+
+                <div class="card" style="width: 30rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p>Miguel Misael Muñoz Baquedano <br> wijames1 [arroba] gmail [punto] com </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>José Miguel Muñoz Urra</br> jose.miguel.muu [arroba] gmail [punto] com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">
+                &nbsp;
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">
+                Octubre, 2019.
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-info text-light" id="cita">
+                <h1>¿Cómo citar la página web?</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">
+
+                Muñoz, B.,M. y Muñoz, U., J.M.(2019). <i>Legibilidad Mu</i>. Viña del Mar, Chile. Recuperado de
+                http://www.legibilidadmu.cl
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-light">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 bg-white">&nbsp;</div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var x, text1, ex1, x_low_clean, ex2;
+            var cont = 0;
+            var cont_pal = 0;
+            var prom = 0;
+            var std_car = 0;
+            var var_car = 0;
+            text1 = "";
+            text2 = "";
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+            var x_m = x.replace(/(\r\n|\n|\r)/gm, " ");
+            var x_low = x_m.toLowerCase();
+
+            // Acá quitamos todos los caracteres raros
+            for (var i = 0; i < x_low.length; i++) {
+
+                if (x_low[i] != "ä" && x_low[i] != "ë" && x_low[i] != "ï" && x_low[i] != "ö" && x_low[i] != "ü" && x_low[i] != "a" && x_low[i] != "b" && x_low[i] != "c" && x_low[i] != "d" && x_low[i] != "e" && x_low[i] != "f" && x_low[i] != "g" && x_low[i] != "h" && x_low[i] != "i" && x_low[i] != "j" && x_low[i] != "k" && x_low[i] != "l" && x_low[i] != "m" && x_low[i] != "n" && x_low[i] != "ñ" && x_low[i] != "o" && x_low[i] != "p" && x_low[i] != "q" && x_low[i] != "r" && x_low[i] != "s" && x_low[i] != "t" && x_low[i] != "u" && x_low[i] != "v" && x_low[i] != "w" && x_low[i] != "x" && x_low[i] != "y" && x_low[i] != "z" && x_low[i] != "á" && x_low[i] != "é" && x_low[i] != "í" && x_low[i] != "ó" && x_low[i] != "ú" && x_low[i] != " " && x_low[i] != "0" && x_low[i] != "1" && x_low[i] != "2" && x_low[i] != "3" && x_low[i] != "4" && x_low[i] != "5" && x_low[i] != "6" && x_low[i] != "7" && x_low[i] != "8" && x_low[i] != "9") {
+                    //x_low[i] = "";
+                    x_low = x_low.substr(0, i) + "_" + x_low.substr(i + 1);
+                }
+
+            }
+
+            x_low_clean = x_low.replace(/_/g, '');
+            ex1 = x_low_clean.split(" ");
+
+
+            for (var i = 0; i < x_low_clean.split(" ").length; i++) {
+                if (ex1[i] != "") {
+                    text1 = text1 + "<li>" + ex1[i] + " | Caracteres: " + ex1[i].length + "</li>";
+                    text2 = text2 + "<option value=val' + " + cont + "'> Caracteres: " + ex1[i].length + " | Palabra: " + ex1[i] + "</option>";
+
+                    prom = prom + ex1[i].length;
+                    cont_pal = cont_pal + 1;
+                    cont = cont + ex1[i].length;
+                }
+                // Ahora contaremos los caracteres totales
+
+            }
+            prom = prom / cont_pal;
+            var var_pro = 40;
+            //  En estas líneas, vamos a calcular el promedio.
+            for (var i = 0; i < ex1.length; i++) {
+                if (ex1[i] != "") {
+                    std_car = std_car + (ex1[i].length - prom) ** 2;
+                }
+            }
+
+            std_car = (std_car / cont_pal) ** (1 / 2);
+
+            var_car = (std_car) ** (2);
+
+            var leg_mu = (prom / (var_car * (cont_pal / (cont_pal - 1)))) * 100;
+            document.getElementById("car").innerHTML = cont;
+            document.getElementById("pal").innerHTML = cont_pal;
+
+            document.getElementById("pg_bar").innerHTML = "<div class='progress-bar' role='progressbar' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100' style='width: " + 0 + "%;'>";
+            document.getElementById("var").innerHTML = Number(Math.round(var_car + 'e4') + 'e-4');
+            document.getElementById("prom").innerHTML = Number(Math.round(prom + 'e4') + 'e-4');
+            document.getElementById("desv").innerHTML = Number(Math.round(std_car + 'e4') + 'e-4');
+            document.getElementById("legmu").innerHTML = Number(Math.round(leg_mu + 'e4') + 'e-4');
+            document.getElementById("lista").innerHTML = text2;
+            if (leg_mu > 100) {
+                document.getElementById("pg_bar").innerHTML = "<div class='progress-bar' role='progressbar' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100' style='width: " + 100 + "%;'>";
+                document.getElementById("dif").innerHTML = "+100";
+            }
+
+            if (leg_mu <= 100 && leg_mu > 0) {
+                document.getElementById("pg_bar").innerHTML = "<div class='progress-bar' role='progressbar' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100' style='width: " + leg_mu + "%;'>";
+                document.getElementById("dif").innerHTML = Number(Math.round(leg_mu + 'e4') + 'e-4');;
+            }
+
+            if (leg_mu < 0) {
+                document.getElementById("pg_bar").innerHTML = "<div class='progress-bar' role='progressbar' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100' style='width: " + 0 + "%;'>";
+                document.getElementById("dif").innerHTML = "-0";
+            }
+
+
+            document.getElementById("d_1").innerHTML = "Muy fácil";
+            document.getElementById("d_2").innerHTML = "Fácil";
+            document.getElementById("d_3").innerHTML = "Un poco fácil";
+            document.getElementById("d_4").innerHTML = "Adecuado";
+            document.getElementById("d_5").innerHTML = "Un poco difícil";
+            document.getElementById("d_6").innerHTML = "Difícil";
+            document.getElementById("d_7").innerHTML = "Muy difícil";
+
+
+
+
+            if (leg_mu > 91) {
+                document.getElementById("d_1").innerHTML = "<strong>Muy fácil</strong>";
+            }
+
+            if (leg_mu < 91 && leg_mu >= 81) {
+                document.getElementById("d_2").innerHTML = "<strong>Fácil</strong>";
+            }
+
+            if (leg_mu < 81 && leg_mu >= 71) {
+                document.getElementById("d_3").innerHTML = "<strong>Un poco fácil</strong>";
+            }
+
+            if (leg_mu < 71 && leg_mu >= 61) {
+                document.getElementById("d_4").innerHTML = "<strong>Adecuado</strong>";
+            }
+
+            if (leg_mu < 61 && leg_mu >= 51) {
+                document.getElementById("d_5").innerHTML = "<strong>Un poco difícil</strong>";
+            }
+
+            if (leg_mu < 51 && leg_mu >= 31) {
+                document.getElementById("d_6").innerHTML = "<strong>Difícil</strong>";
+            }
+
+            if (leg_mu < 31 && leg_mu >= 0) {
+                document.getElementById("d_7").innerHTML = "<strong>Muy difícil</strong>";
+            }
+
+            var texto = $("#numb").val();
+
+            // Enviar el contenido a tu servidor Python
+            $.ajax({
+                type: "POST",
+                url: "/procesar_texto",
+                data: { numb: texto },
+                success: function (response) {
+                    // Verificar que la respuesta del servidor contiene la información esperada
+                    if (response && response.Componentes_Principales !== undefined) {
+                        // Manejar la respuesta del servidor si es necesario
+                        console.log("Respuesta del servidor:", response);
+
+                        // Realizar acciones adicionales con la respuesta
+                        $("#componentes_principales").text(response.Componentes_Principales);
+
+                        //Parte 1 Frecuencia
+                        var longitudes_parte1_valores = response.longitudes_parte1;
+                        for (var i = 0; i < longitudes_parte1_valores.length; i++) {
+                            var indice = i + 1;
+                            $("#frecuenciaInicialCP_" + indice).text(longitudes_parte1_valores[i]);
+                        }
+                        //Parte 2 Frecuencia
+                        var longitudes_parte2_valores = response.longitudes_parte2;
+                        for (var i = 0; i < longitudes_parte2_valores.length; i++) {
+                            var indice = i + 1;
+                            $("#frecuenciaCentralCP_" + indice).text(longitudes_parte2_valores[i]);
+                        }
+                        //Parte 3 Frecuencia
+                        var longitudes_parte3_valores = response.longitudes_parte3;
+                        for (var i = 0; i < longitudes_parte3_valores.length; i++) {
+                            var indice = i + 1;
+                            $("#frecuenciaFinalCP_" + indice).text(longitudes_parte3_valores[i]);
+                        }
+                        //Cargas Factoriales CP
+                        var cargasCP = response.cargasFactorialesCP;
+                        for (var i = 0; i < cargasCP.length; i++) {
+                            var indice = i + 1;
+                            var valorRedondeado = cargasCP[i].toFixed(4);
+                            $("#CP_" + indice).text(valorRedondeado);
+                        }
+
+                        var valorComponentesPrincipales = parseFloat(response.Componentes_Principales);
+
+                        if (!isNaN(valorComponentesPrincipales)) {
+                            $(".w-50 tbody tr td.interpretacion").removeClass("font-weight-bold");
+
+                            // Agregar negrita según el valor de Componentes_Principales
+                            if (valorComponentesPrincipales >= 0.9) {
+                                $("td:contains('Excelente')").addClass("font-weight-bold");
+                            } else if (valorComponentesPrincipales >= 0.8) {
+                                $("td:contains('Buena')").addClass("font-weight-bold");
+                            } else if (valorComponentesPrincipales >= 0.7) {
+                                $("td:contains('Aceptable')").addClass("font-weight-bold");
+                            } else if (valorComponentesPrincipales >= 0.6) {
+                                $("td:contains('Cuestionable')").addClass("font-weight-bold");
+                            } else if (valorComponentesPrincipales >= 0.5) {
+                                $("td:contains('Pobre')").addClass("font-weight-bold");
+                            } else {
+                                $("td:contains('Inaceptable')").addClass("font-weight-bold");
+                            }
+                        }
+
+                    } else {
+                        // Manejar el caso en el que la respuesta del servidor no tiene el formato esperado
+                        console.error("Respuesta del servidor inesperada:", response);
+                    }
+                },
+                error: function (error) {
+                    // Manejar errores si es necesario
+                    console.error(error);
+                }
+            });
+
+
+        }
+
+        function WordCount(str) {
+            return str.split(" ").length;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+
+</html>
