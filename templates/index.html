@@ -177,8 +177,9 @@
                                 <tr>
                                     <td>
                                         <button type="button" onclick="myFunction()">Calcular</button>
+                                        <button type="button" onclick="Limpiar()">Limpiar</button>
                                     </td>
-
+                                    
                                     <td>
 
                                     </td>
@@ -1054,6 +1055,11 @@
 
 
     <script>
+        function Limpiar() {
+            var textArea = document.getElementById('numb');
+            textArea.value = '';
+        }
+
         function myFunction() {
             var x, text1, ex1, x_low_clean, ex2;
             var cont = 0;
