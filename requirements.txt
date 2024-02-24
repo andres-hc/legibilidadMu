@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+mpmath
+factor-analyzer
+scipy
+regex
+unidecode
+Flask
