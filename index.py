@@ -184,6 +184,6 @@ def procesar_texto():
     return jsonify({'Componentes_Principales': ComponentesPrincipales, 'longitudes_parte1': parte1List, 'longitudes_parte2': parte2List, 'longitudes_parte3': parte3List, 'cargasFactorialesCP': cargasFactorialesCP})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app = procesar_texto()
+    app.run()
 
-app.listen(3000)
