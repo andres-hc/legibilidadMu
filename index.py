@@ -7,6 +7,7 @@ from scipy.linalg import eigh
 import re
 from unidecode import unidecode
 from flask import Flask, render_template, request, jsonify
+import os
 
 def crear_app():
     app = Flask(__name__)
@@ -188,5 +189,5 @@ def crear_app():
 
 if __name__ == '__main__':
     app = crear_app()
-    app.run()
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
 
