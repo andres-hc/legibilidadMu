@@ -185,3 +185,5 @@ def procesar_texto():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+app.listen(3000)
