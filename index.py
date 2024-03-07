@@ -20,6 +20,7 @@ def crear_app():
     @app.route('/procesar_texto', methods=['POST'])
     def procesar_texto():
         texto_escrito = request.form.get('numb')
+
         # Convertir caracteres con acentos a su forma sin acentos
         texto_sin_acentos = unidecode(texto_escrito)
 
@@ -131,7 +132,7 @@ def crear_app():
 
         # Calcula las cargas factoriales (componentes principales)
         loadings = np.sqrt(eigenvalues) * eigenvectors
-
+        
         # Extrae las tres primeras columnas
         first_three_loadings = loadings[:, :1]
 
@@ -172,19 +173,21 @@ def crear_app():
         print(ComponentesPrincipales)
         #Cargas Factoriales Componentes Principales
         print(formatted_loadings_str)
-        numeros_encontrados_CP = re.findall(r'\d+\.\d+', formatted_loadings_str)
-        cargasFactorialesCP = [float(numero) for numero in numeros_encontrados_CP]
+        cargasFactorialesCP = [float(match) for match in re.findall(r'-?\d+\.\d+', formatted_loadings_str)]
         print(cargasFactorialesCP)
+        # Multiplica todos los valores en la lista por -1
+        formatted_loadings_list_negated = [-1 * valor for valor in cargasFactorialesCP]
+        # Imprime la lista de cargas factoriales negadas
+        print(formatted_loadings_list_negated)
         #Matriz de frecuencias
         parte1List = list(longitudes_parte1.values())
         parte2List = list(longitudes_parte2.values())
         parte3List = list(longitudes_parte3.values())
 
-        return jsonify({'Componentes_Principales': ComponentesPrincipales, 'longitudes_parte1': parte1List, 'longitudes_parte2': parte2List, 'longitudes_parte3': parte3List, 'cargasFactorialesCP': cargasFactorialesCP})
+        return jsonify({'Componentes_Principales': ComponentesPrincipales, 'longitudes_parte1': parte1List, 'longitudes_parte2': parte2List, 'longitudes_parte3': parte3List, 'cargasFactorialesCP': formatted_loadings_list_negated})
     
     return app
 
 if __name__ == '__main__':
     app = crear_app()
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
-
