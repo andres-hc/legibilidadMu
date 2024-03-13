@@ -184,7 +184,7 @@ def crear_app():
         parte2List = list(longitudes_parte2.values())
         parte3List = list(longitudes_parte3.values())
 
-        return jsonify({'Componentes_Principales': ComponentesPrincipales, 'longitudes_parte1': parte1List, 'longitudes_parte2': parte2List, 'longitudes_parte3': parte3List, 'cargasFactorialesCP': formatted_loadings_list_negated})
+        return jsonify({'Componentes_Principales': ComponentesPrincipales, 'longitudes_parte1': parte1List, 'longitudes_parte2': parte2List, 'longitudes_parte3': parte3List, 'cargasFactorialesCP': cargasFactorialesCP})
     
     return app
 
