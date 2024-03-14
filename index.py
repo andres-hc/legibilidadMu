@@ -136,6 +136,11 @@ def crear_app():
         # Extrae las tres primeras columnas
         first_three_loadings = loadings[:, :1]
 
+        # Verifica si hay al menos un valor negativo en el resultado
+        if np.any(first_three_loadings < 0):
+        # Invierte el signo de todos los valores
+            first_three_loadings = -first_three_loadings
+
         # Formatea y imprime las cargas factoriales de los tres primeros componentes principales
         formatted_loadings = np.round(first_three_loadings, 8)
         formatted_loadings_str = np.array2string(formatted_loadings, separator=', ')
@@ -175,10 +180,6 @@ def crear_app():
         print(formatted_loadings_str)
         cargasFactorialesCP = [float(match) for match in re.findall(r'-?\d+\.\d+', formatted_loadings_str)]
         print(cargasFactorialesCP)
-        # Multiplica todos los valores en la lista por -1
-        formatted_loadings_list_negated = [-1 * valor for valor in cargasFactorialesCP]
-        # Imprime la lista de cargas factoriales negadas
-        print(formatted_loadings_list_negated)
         #Matriz de frecuencias
         parte1List = list(longitudes_parte1.values())
         parte2List = list(longitudes_parte2.values())
