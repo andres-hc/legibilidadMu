@@ -32,11 +32,8 @@ def crear_app():
 
         # Calcular la cantidad total de palabras y la longitud de cada parte
         total_palabras = len(palabras)
-        print("Total de palabras:", total_palabras)
         longitud_parte = total_palabras // 3
-        print(longitud_parte)
         resto = total_palabras % 3
-        print(resto)
 
         # Distribuir las palabras de manera equitativa
         #parte1 = palabras[:longitud_parte]
@@ -54,10 +51,6 @@ def crear_app():
         parte1 = palabras[:longitud_parte]
         parte2 = palabras[longitud_parte:2*longitud_parte]
         parte3 = palabras[2*longitud_parte:3*longitud_parte]
-
-        print(len(parte1))
-        print(len(parte2))
-        print(len(parte3))
 
         # Ajustar partes si hay resto
         if resto == 1:
@@ -83,19 +76,11 @@ def crear_app():
         longitudes_parte1 = contar_caracteres(parte1)
         longitudes_parte2 = contar_caracteres(parte2)
         longitudes_parte3 = contar_caracteres(parte3)
-        print(longitudes_parte1)
-        print(longitudes_parte2)
-        print(longitudes_parte3)
 
         # Sumar el contenido del arreglo longitudes_parte1
         suma_longitudes_parte1 = sum(longitudes_parte1.values())
         suma_longitudes_parte2 = sum(longitudes_parte2.values())
         suma_longitudes_parte3 = sum(longitudes_parte3.values())
-
-        # Imprimir la suma o hacer lo que desees con ella
-        print("Suma de longitudes en parte1:", suma_longitudes_parte1)
-        print("Suma de longitudes en parte2:", suma_longitudes_parte2)
-        print("Suma de longitudes en parte3:", suma_longitudes_parte3)
 
         # Guardar resultados en variables
         resultados = {
@@ -113,10 +98,6 @@ def crear_app():
 
         # Calcula la matriz de correlaciones
         correlation_matrix = df.corr()
-
-        # Imprime la matriz de correlaciones
-        print("Matriz de correlaciones:")
-        print(correlation_matrix)
 
         #otro
         # Calcula la matriz de correlaciones
@@ -136,9 +117,12 @@ def crear_app():
         # Extrae las tres primeras columnas
         first_three_loadings = loadings[:, :1]
 
-        # Verifica si hay al menos un valor negativo en el resultado
-        if np.any(first_three_loadings < 0):
-        # Invierte el signo de todos los valores
+        ## Contar el número de valores negativos en first_three_loadings
+        num_negativos = np.sum(first_three_loadings < 0)
+
+        # Verificar si hay al menos dos valores negativos
+        if num_negativos >= 2:
+            # Invierte el signo de todos los valores
             first_three_loadings = -first_three_loadings
 
         # Formatea y imprime las cargas factoriales de los tres primeros componentes principales
@@ -171,14 +155,15 @@ def crear_app():
         result = sum_of_loadings * sum_of_loadings
 
         ComponentesPrincipales = np.round(result/(result + sum_one_minus_squared_loadings), 4)
-        print("este es el resultado Componentes Principales: ",  ComponentesPrincipales)
 
         #Datos necesarios para devolver
         #Componentes Principales
         print(ComponentesPrincipales)
         #Cargas Factoriales Componentes Principales
+        print("estas son las cargas que busco:")
         print(formatted_loadings_str)
-        cargasFactorialesCP = [float(match) for match in re.findall(r'-?\d+\.\d+', formatted_loadings_str)]
+        #cargasFactorialesCP = [float(match) for match in re.findall(r'-?\d+\.\d+', formatted_loadings_str)]
+        cargasFactorialesCP = [float(match) for match in re.findall(r'-?\d+\.?\d*', formatted_loadings_str)]
         print(cargasFactorialesCP)
         #Matriz de frecuencias
         parte1List = list(longitudes_parte1.values())

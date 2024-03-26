@@ -1058,9 +1058,53 @@
         function Limpiar() {
             var textArea = document.getElementById('numb');
             textArea.value = '';
+            document.getElementById("CP_1").innerHTML = "";
+            document.getElementById("CP_2").innerHTML = "";
+            document.getElementById("CP_3").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_1").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_1").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_1").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_2").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_2").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_2").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_3").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_3").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_3").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_4").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_4").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_4").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_5").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_5").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_5").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_6").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_6").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_6").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_7").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_7").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_7").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_8").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_8").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_8").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_9").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_9").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_9").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_10").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_10").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_10").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_11").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_11").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_11").innerHTML = "";
+            document.getElementById("frecuenciaInicialCP_12").innerHTML = "";
+            document.getElementById("frecuenciaCentralCP_12").innerHTML = "";
+            document.getElementById("frecuenciaFinalCP_12").innerHTML = "";
+            document.getElementById("componentes_principales").innerHTML = "";
+            $(".w-50 tbody tr td.interpretacion").removeClass("font-weight-bold");
         }
 
         function myFunction() {
+            document.getElementById("CP_1").innerHTML = "0";
+            document.getElementById("CP_2").innerHTML = "0";
+            document.getElementById("CP_3").innerHTML = "0";
             var x, text1, ex1, x_low_clean, ex2;
             var cont = 0;
             var cont_pal = 0;
@@ -1218,6 +1262,7 @@
                         for (var i = 0; i < cargasCP.length; i++) {
                             var indice = i + 1;
                             var valorRedondeado = cargasCP[i].toFixed(4);
+                            console.log("valor de PRRRRUEBA: " + valorRedondeado);
                             $("#CP_" + indice).text(valorRedondeado);
                         }
 
